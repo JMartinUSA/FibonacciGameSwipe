@@ -1,0 +1,178 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container{
+	background: black;
+	height: 100%;
+	width: 100%;
+}
+
+.clockGame{
+	background:white;
+	float:left;
+	width:66.66%;
+	height:75%;
+	position:relative;
+}
+#submitAnswer{
+	background: white;
+	border:1px solid white;
+	bottom:5%;
+	font-size: 2.2em;
+	height:10%;
+	margin-left: 15%;
+	margin-right: 15%;
+	opacity: .5;
+	position: absolute;
+	text-align: center;
+	width:70%;
+}
+#showStats{
+	background: white;
+	border:1px solid white;
+	top:5%;
+	font-size: 2.2em;
+	height:10%;
+	margin-left: 15%;
+	margin-right: 15%;
+	opacity: .5;
+	position: absolute;
+	text-align: center;
+	width:70%;
+}
+#rightButtonsGame{
+	float:right;
+	height:75%;
+	width:33.33%;
+}
+.rightButtonGame{
+	background: rgba(255,0,0,.5);
+	border:1px solid white;
+	border-radius: 3px;
+	color:white;
+	float:left;
+	font-size: 2.5em;
+	height:calc(16.66% - 5px);
+	margin:2.5px;
+	padding:3px;
+	text-align: center;
+	width:calc(50% - 5px);
+}
+#bottomButtonsGame{
+	clear:both;
+	height:25%;
+	width:100%;
+}
+.bottomButtonGame{
+	background: rgba(0,0,255,.5);
+	border:1px solid white;
+	border-radius: 3px;
+	color:white;
+	float:left;
+	font-size: 2.5em;
+	height:calc(50% - 5px);
+	margin: 2.5px;
+	text-align: center;
+	width:calc(16.66% - 5px);
+}
+#threeGame{
+	background: red;
+	float:left;
+	width:60%;
+	height:37.5%;
+	border:2px solid white;
+	border-left: 4px solid white;
+	border-top: 4px solid white;
+}
+.onetwoGame{
+	float:right;
+    width:40%;
+	height:37.5%;
+}
+#twoGame{
+	background: blue;
+	width:100%;
+	height:66.6%;
+	border:2px solid white;
+	border-right:4px solid white;
+	border-top:4px solid white;
+}
+#oneGame{
+	background: green;
+	float:left;
+	width:50%;
+	height:33.4%;
+	border:2px solid white;
+}
+#one2Game{
+	background: black;
+	float:right;
+	width:50%;
+	height:33.4%;
+	border:2px solid white;
+	border-right:4px solid white;
+}
+#fiveGame{
+	clear:both;
+	background: purple;
+	width:100%;
+	height:62.5%;
+	border-top:2px solid white;
+	border-left:4px solid white;
+	border-right:4px solid white;
+	border-bottom:4px solid white;
+}
+
+
+body{
+        border: 0px;
+        margin: 0px;
+}
+body{
+	margin:0px;
+	background: black;
+}
+
+
+@media screen and (min-height:300px){.container{height :300px;}}
+@media screen and (min-height:320px){.container{height :320px;}}
+@media screen and (min-height:340px){.container{height :340px;}}
+@media screen and (min-height:360px){.container{height :360px;}}
+@media screen and (min-height:380px){.container{height :380px;}}
+@media screen and (min-height:400px){.container{height :400px;}}
+@media screen and (min-height:420px){.container{height :420px;}}
+@media screen and (min-height:440px){.container{height :440px;}}
+@media screen and (min-height:460px){.container{height :460px;}}
+@media screen and (min-height:480px){.container{height :480px;}}
+@media screen and (min-height:500px){.container{height :500px;}}
+@media screen and (min-height:520px){.container{height :520px;}}
+@media screen and (min-height:540px){.container{height :540px;}}
+@media screen and (min-height:560px){.container{height :560px;}}
+@media screen and (min-height:580px){.container{height :580px;}}
+@media screen and (min-height:600px){.container{height :600px;}}
+@media screen and (min-height:620px){.container{height :620px;}}
+@media screen and (min-height:640px){.container{height :640px;}}
+@media screen and (min-height:660px){.container{height :660px;}}
+@media screen and (min-height:680px){.container{height :680px;}}
+@media screen and (min-height:700px){.container{height :700px;}}
+@media screen and (min-height:720px){.container{height :720px;}}
+@media screen and (min-height:740px){.container{height :740px;}}
+@media screen and (min-height:760px){.container{height :760px;}}
+@media screen and (min-height:780px){.container{height :780px;}}
+@media screen and (min-height:800px){.container{height :800px;}}
+@media screen and (min-height:820px){.container{height :820px;}}
+@media screen and (min-height:840px){.container{height :840px;}}
+@media screen and (min-height:860px){.container{height :860px;}}
+@media screen and (min-height:880px){.container{height :880px;}}
+@media screen and (min-height:900px){.container{height :900px;}}
+@media screen and (min-height:920px){.container{height :920px;}}
+@media screen and (min-height:940px){.container{height :940px;}}
+@media screen and (min-height:960px){.container{height :960px;}}
+@media screen and (min-height:980px){.container{height :980px;}}
+@media screen and (min-height:1000px){.container{height :1000px;}}
+@media screen and (min-height:1020px){.container{height :1020px;}}
+@media screen and (min-height:1040px){.container{height :1040px;}}
+@media screen and (min-height:1060px){.container{height :1060px;}}
+@media screen and (min-height:1080px){.container{height :1080px;}}
+

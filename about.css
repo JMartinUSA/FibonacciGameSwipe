@@ -1,0 +1,124 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.container{
+	background:black;
+	width:100%;
+}
+.topBorderAbout{
+	height:10%;
+	width:100%;
+}
+.backAbout{
+	background: red;
+	width:70px;
+	height:24px;
+	border:2px solid white;
+	margin-left: 20px;
+	text-align: center;
+	color:white;
+	font-size: 20px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+.buttonAbout{
+	background: red;
+	width:70px;
+	height:26px;
+	border:2px solid white;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+.contentAbout{
+	color:white;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	width:90%;
+	margin:5%;
+	margin-top:5%;
+	margin-bottom:0px;
+}
+
+body{
+    margin:0px;
+}
+a{
+	text-decoration: none;
+	text-align: center;
+	color:white;
+	font-size: 20px;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+p{
+	margin:2px;
+}
+body{
+	margin:0px;
+	background: black;
+}
+
+
+/*.back{
+	font-size: 100%;
+	background: red;
+	width:150px;
+	height:57px;
+	border:2px solid white;
+	margin-left: 20px;
+	margin-top: auto;
+	margin-bottom:auto;
+}*/
+.contentAbout{
+	font-size: 5px;
+	color:white;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	width:80%;
+	margin:10%;
+	margin-top:10%;
+	margin-bottom:0px;
+    }
+}
+.container{
+	margin-left: auto;
+	margin-right:auto;
+}
+@media screen and (min-height:300px){.container{height :300px;}.contentAbout{font-size: 7px;}}
+@media screen and (min-height:320px){.container{height :320px;}}
+@media screen and (min-height:340px){.container{height :340px;}}
+@media screen and (min-height:360px){.container{height :360px;}.contentAbout{font-size: 8px;}}
+@media screen and (min-height:380px){.container{height :380px;}}
+@media screen and (min-height:400px){.container{height :400px;}.contentAbout{font-size: 9px;}}
+@media screen and (min-height:420px){.container{height :420px;}}
+@media screen and (min-height:440px){.container{height :440px;}.contentAbout{font-size: 10px;}}
+@media screen and (min-height:460px){.container{height :460px;}}
+@media screen and (min-height:480px){.container{height :480px;}}
+@media screen and (min-height:500px){.container{height :500px;}}
+@media screen and (min-height:520px){.container{height :520px;}.contentAbout{font-size: 11px;}}
+@media screen and (min-height:540px){.container{height :540px;}.contentAbout{font-size: 12px;}}
+@media screen and (min-height:560px){.container{height :560px;}}
+@media screen and (min-height:580px){.container{height :580px;}}
+@media screen and (min-height:600px){.container{height :600px;}.contentAbout{font-size: 13px;}}
+@media screen and (min-height:620px){.container{height :620px;}.contentAbout{font-size: 14px;}}
+@media screen and (min-height:640px){.container{height :640px;}}
+@media screen and (min-height:660px){.container{height :660px;}}
+@media screen and (min-height:680px){.container{height :680px;}}
+@media screen and (min-height:700px){.container{height :700px;}.contentAbout{font-size: 16px;}}
+@media screen and (min-height:720px){.container{height :720px;}}
+@media screen and (min-height:740px){.container{height :740px;}}
+@media screen and (min-height:760px){.container{height :760px;}}
+@media screen and (min-height:780px){.container{height :780px;}.contentAbout{font-size: 18px;}}
+@media screen and (min-height:800px){.container{height :800px;}}
+@media screen and (min-height:820px){.container{height :820px;}}
+@media screen and (min-height:840px){.container{height :840px;}}
+@media screen and (min-height:860px){.container{height :860px;}.contentAbout{font-size: 21px;}}
+@media screen and (min-height:880px){.container{height :880px;}}
+@media screen and (min-height:900px){.container{height :900px;}}
+@media screen and (min-height:920px){.container{height :920px;}}
+@media screen and (min-height:940px){.container{height :940px;}}
+@media screen and (min-height:960px){.container{height :960px;}.contentAbout{font-size: 23px;}}
+@media screen and (min-height:980px){.container{height :980px;}}
+@media screen and (min-height:1000px){.container{height :1000px;}}
+@media screen and (min-height:1020px){.container{height :1020px;}}
+@media screen and (min-height:1040px){.container{height :1040px;}.contentAbout{font-size: 25px;}}
+@media screen and (min-height:1060px){.container{height :1060px;}}
+@media screen and (min-height:1080px){.container{height :1080px;}.contentAbout{font-size: 27px;}}
+

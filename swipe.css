@@ -1,0 +1,29 @@
+.sideSwipe{
+	background: red;
+	height:100%;
+	
+	position:absolute;
+	width:5px;
+	z-index: 100;
+}
+.swipeMenu{
+	/**background:black;
+	border:1px solid white;
+	border-radius: 7px;**/
+	background: rgba(0,0,0,.5);
+	display:none;
+	height:100%;
+	left:0px;
+	position: absolute;
+	top:0px;
+	width: 100%;
+	z-index: 50;
+}
+#leftBar{
+	left: 0px;
+	top: 0px;
+}
+#rightBar{
+	right: 0px;
+	top: 0px;
+}

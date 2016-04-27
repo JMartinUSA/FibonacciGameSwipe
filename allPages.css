@@ -1,0 +1,39 @@
+body{
+	background: black;
+}
+#swipeFromLeftContainer{
+	display:none;
+}
+.swipeFromLeftMenuItem{
+	background: rgba(0,0,0,.5);
+	border-radius: 7px;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	left:25%;
+	width:50%;
+	z-index: 110;
+}
+#swipeFromLeftMenuItemTop{
+	top:25%;
+}
+#swipeFromLeftMenuItemMiddle{
+	top:50%;
+}
+#swipeFromLeftMenuItemBottom{
+	top:75%;
+}
+#containerIndex{
+
+}
+#containerClock{
+
+}
+#containerAbout{
+	
+}
+#containerHowTo{
+	
+}

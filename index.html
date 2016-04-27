@@ -1,0 +1,218 @@
+<!doctype html>
+
+<html>
+
+  <head>
+    <title>Current</title>
+    <!-- All Stylesheets-->
+    <link href="about.css" rel="stylesheet" />
+    <link href="allPages.css" rel="stylesheet" />
+    <link href="clock.css" rel="stylesheet" />
+    <link href="clockGame.css" rel="stylesheet" />
+    <link href="howTo.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="popout.css" rel="stylesheet" />
+    <link href="swipe.css" rel="stylesheet" />
+    <link href='welcome.css' rel='stylesheet' />
+
+
+  </head>
+
+  <body>
+
+    <!-- Welcome -->
+
+
+
+    <!-- Index Container-->
+    <div class='container' id="containerIndex">
+      <div class="topBorderIndex"></div>
+
+      <div class="thumbnailIndex" id="welcomeIcon"> <img src="fibonacci clock 400px.png" /></div>
+      <div class="buttonIndex" id="welcomeSlide1" onclick="hideAllButThis('Clock'), changeClock();"> <p>Clock</p> </div>
+      <div class="buttonIndex" id="welcomeSlide2" onclick="hideAllButThis('Game'), nextLevel()"> <p>Game</p> </div>
+      <div class="buttonIndex" id="welcomeSlide3" onclick="hideAllButThis('HowTo')"> <p>How To</p> </div>
+      <div class="buttonIndex" id="welcomeSlide4" onclick="hideAllButThis('About')"> <p>About</p> </div>
+
+      <div class="topBorderIndex"></div>
+    </div>
+
+    <!-- Swipe And Menus -->
+
+    <div class="sideSwipe" id="leftBar" ontouchstart="touchStart(event,'leftBar');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);"></div>
+    <div class="sideSwipe" id="rightBar" ontouchstart="touchStart(event,'rightBar');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);"></div>
+    <div id="swipeFromLeft" class="swipeMenu" ontouchstart="touchStart(event,'swipeFromLeft');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);"></div>
+    <div id="swipeFromLeftContainer">
+      <div id="swipeFromLeftMenuItemTop" class="swipeFromLeftMenuItem" onclick="swipeHome()">Home</div>
+      <div id="swipeFromLeftMenuItemMiddle" class="swipeFromLeftMenuItem" onclick="swipeSettings()">Settings</div>
+      <div id="swipeFromLeftMenuItemBottom" class="swipeFromLeftMenuItem" onclick="swipeStats()">Stats</div>
+    </div>
+    
+    
+    <div id="transparentCover"></div>
+
+    <!-- Stats -->
+
+
+
+    <div id="swipeFromRight" class="swipeMenu" ontouchstart="touchStart(event,'swipeFromRight');" ontouchend="touchEnd(event);" ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);">
+        <div class="popoutTextGame">
+          Total correct: <div class="inlinePopoutGame" id="alltimeCorrect"></div><br>
+          Total incorrect: <div class="inlinePopoutGame" id="alltimeIncorrect"></div><br>
+          Accuracy: <div class="inlinePopoutGame" id="alltimeAccuracy"></div><br>
+          Record in a row: <div class="inlinePopoutGame" id="alltimeRecordInARowFibonacci"></div><br>
+          <br>
+          This Session
+          <br>
+          Correct: <div class="inlinePopoutGame" id="correctThisSession"></div><br>
+          Incorrect: <div class="inlinePopoutGame" id="incorrectThisSession"></div><br>
+          Accuracy: <div class="inlinePopoutGame percentCorrectThisSession"></div><br>
+          Record in a row: <div class="inlinePopoutGame recordInARowThisSession"></div><br>
+
+
+        </div>
+        
+    </div>
+    <div id='exitStats' onclick="hideSwipeMenus()">Back</div>
+
+    <!-- Settings -->
+
+
+    <!-- Clock Container-->
+    <div class="container" id="containerClock">
+
+      <div class="topBorderClock"></div>
+
+        <div class="clockClock">
+          <div id="threeClock"></div>
+
+          <div class="onetwoClock">
+            <div id="twoClock"></div>
+            <div id="oneClock"></div>
+            <div id="one2Clock"></div>
+            </div>
+
+            <div id="fiveClock"></div>
+        </div>
+
+        <div class="bottomBorderClock"></div>
+    </div>
+
+    <!-- About Container-->
+    <div class="container" id="containerAbout">
+      <div class="topBorderAbout"></div>
+      <div class="backAbout buttonAbout" onclick="hideAllButThis('Index')">Back</div>
+      <div class="contentAbout">
+        &nbsp&nbsp&nbspHi, I'm Jesse Martin, I read about the idea for this clock online. I thought the idea behind it was really cool, I'm a big fan of simple looks and this clock is just about as simple as it gets. It may not be the most practical way to tell time, but as soon as i read the article, I knew I had to try to make one myself. I've really enjoyed working on this project and I feel like I've learned a lot about how webpages and apps work.<br><br>
+
+        &nbsp&nbsp&nbspAnyway, I hope you enjoy playing around with this app, maybe show it around to your friends (it is kind of a cool conversation starter in my opinion). If you ever see, or think of a cool idea/concept like this I definitely recommend you pursue it, you WILL learn something and you WILL have fun (albeit not without some frustration, this is a part of life). <br><br>
+
+        &nbsp&nbsp&nbspIf you enjoy this app you can shoot me an e-mail at Jesse@JayMartMedia.com, I'd really appreciate it.<br><br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-Jesse Martin
+      </div>
+
+
+      <div class="bottomBorderAbout"></div>
+    </div>
+
+    <!--HowTo Container-->   
+    <div class="container" id="containerHowTo">
+
+      <div class="topBorderHowTo"></div>
+      <div class="buttonHowTo" onclick="hideAllButThis('Index')">Home</div>
+      <div class="dividerHowTo"></div>
+
+
+      <div class="bottomBorderHowTo"></div>
+      <div class="backHowTo buttonHowTo" onclick="minusOneHowTo(); change_cssHowTo();"><p>Back</p></div>
+      <div class="nextHowTo buttonHowTo" onclick="addOneHowTo(); change_cssHowTo();"><p>Next</p></div>
+    </div>
+   
+   <!--Game Container-->
+    <div class="container" id='containerGame'>
+      <!--<div id="transparentCoverGame"></div>-->
+      <div id="correctPopout" class="popoutGame">
+        <div class="popoutTextGame">
+          Good Job!!<br>You have answered<br><div class="inlinePopoutGame" id="inARow"></div> in a <br> row correct!<br>You have<br><div class="percentCorrectThisSession"></div> accuracy!
+        </div>
+        <div class="buttonGame statButtonGame" onclick="showStats()">Stats</div>
+        <div class="buttonGame nextButtonGame" onclick="nextLevel()">Continue</div>
+      </div>
+
+      <div id="incorrectPopout" class="popoutGame">
+        <div class="popoutTextGame">
+          Incorrect<br>Ohh, nice try!!<br>Your record is<br><div class="inlinePopoutGame recordInARowThisSession"></div> in a<br> row correct!<br> Your accuracy is <div class="percentCorrectThisSession" ></div>
+        </div>
+        <div class="buttonGame nextButtonGame" onclick="nextLevel()">Continue</div>
+        <div class="buttonGame statButtonGame" onclick="showStats()">Stats</div>
+      </div>
+
+      
+
+
+
+      <div class="topBorderGame"></div>
+
+        <div class="clockGame">
+          <div id="showStats" onclick="showStats()">Stats</div>
+          <div id="submitAnswer" onclick="submitAnswer()">Confirm</div>
+          <div id="threeGame"></div>
+
+          <div class="onetwoGame">
+            <div id="twoGame"></div>
+            <div id="oneGame"></div>
+            <div id="one2Game"></div>
+          </div>
+
+          <div id="fiveGame"></div>
+        </div>
+
+        <div class="bottomBorderGame"></div>
+        <div id="rightButtonsGame">
+            <div class="rightButtonGame" id="rightButton0" onclick="clearHours(), highlightHour(this, 1);">1</div>
+            <div class="rightButtonGame" id="rightButton1" onclick="clearHours(), highlightHour(this,2);">2</div>
+            <div class="rightButtonGame" id="rightButton2" onclick="clearHours(), highlightHour(this,3);">3</div>
+            <div class="rightButtonGame" id="rightButton3" onclick="clearHours(), highlightHour(this,4);">4</div>
+            <div class="rightButtonGame" id="rightButton4" onclick="clearHours(), highlightHour(this,5);">5</div>
+            <div class="rightButtonGame" id="rightButton5" onclick="clearHours(), highlightHour(this,6);">6</div>
+            <div class="rightButtonGame" id="rightButton6" onclick="clearHours(), highlightHour(this,7);">7</div>
+            <div class="rightButtonGame" id="rightButton7" onclick="clearHours(), highlightHour(this,8);">8</div>
+            <div class="rightButtonGame" id="rightButton8" onclick="clearHours(), highlightHour(this,9);">9</div>
+            <div class="rightButtonGame" id="rightButton9" onclick="clearHours(), highlightHour(this,10);">10</div>
+            <div class="rightButtonGame" id="rightButton10" onclick="clearHours(), highlightHour(this,11);">11</div>
+            <div class="rightButtonGame" id="rightButton11" onclick="clearHours(), highlightHour(this,12);">12</div>
+        </div>
+        <div id="bottomButtonsGame">
+            
+            <div class="bottomButtonGame" id="bottomButton1" onclick="clearMinutes(), highlightMinute(this, 05);">05</div>
+            <div class="bottomButtonGame" id="bottomButton2" onclick="clearMinutes(), highlightMinute(this,10);">10</div>
+            <div class="bottomButtonGame" id="bottomButton3" onclick="clearMinutes(), highlightMinute(this,15);">15</div>
+            <div class="bottomButtonGame" id="bottomButton4" onclick="clearMinutes(), highlightMinute(this,20);">20</div>
+            <div class="bottomButtonGame" id="bottomButton5" onclick="clearMinutes(), highlightMinute(this,25);">25</div>
+            <div class="bottomButtonGame" id="bottomButton6" onclick="clearMinutes(), highlightMinute(this,30);">30</div>
+            <div class="bottomButtonGame" id="bottomButton7" onclick="clearMinutes(), highlightMinute(this,35);">35</div>
+            <div class="bottomButtonGame" id="bottomButton8" onclick="clearMinutes(), highlightMinute(this,40);">40</div>
+            <div class="bottomButtonGame" id="bottomButton9" onclick="clearMinutes(), highlightMinute(this,45);">45</div>
+            <div class="bottomButtonGame" id="bottomButton10" onclick="clearMinutes(), highlightMinute(this,50);">50</div>
+            <div class="bottomButtonGame" id="bottomButton11" onclick="clearMinutes(), highlightMinute(this,55);">55</div>
+            <div class="bottomButtonGame" id="bottomButton0" onclick="clearMinutes(), highlightMinute(this, 00);">00</div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--All Scripts-->
+    <SCRIPT src="allPagesCopy.js"></SCRIPT> 
+    <SCRIPT src="clockCopy.js"></SCRIPT> 
+    <SCRIPT src="gameCopy.js"></SCRIPT> 
+    <SCRIPT src="howToCopy.js"></SCRIPT>
+    <SCRIPT src="popoutCopy.js"></SCRIPT>
+    <SCRIPT src="statsCopy.js"></SCRIPT>
+    <SCRIPT src="swipeCopy.js"></SCRIPT>
+
+
+  </body>
+
+</html>
