@@ -1,9 +1,8 @@
 .sideSwipe{
-	background: red;
 	height:100%;
 	
 	position:absolute;
-	width:5px;
+	width:10px;
 	z-index: 100;
 }
 .swipeMenu{
