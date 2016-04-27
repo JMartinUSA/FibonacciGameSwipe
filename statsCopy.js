@@ -41,7 +41,6 @@ function statsToHTML(){
 	document.getElementById('correctThisSession').innerHTML=correctThisSession || 0;
 	document.getElementById('incorrectThisSession').innerHTML=incorrectThisSession || 0;
 	document.getElementsByClassName('percentCorrectThisSession')[2].innerHTML=percentCorrectThisSession || 0;
-	document.getElementsByClassName('percentCorrectThisSession')[1].innerHTML=percentCorrectThisSession || 0;
 	console.log(recordInARowThisSession);
 	document.getElementsByClassName('recordInARowThisSession')[1].innerHTML=recordInARowThisSession || 0;
 }
